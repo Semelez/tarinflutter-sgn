@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:testflutter/home.dart';
+import 'package:testflutter/list_screen.dart';
 
 class TabPage extends StatefulWidget {
   const TabPage({super.key});
@@ -13,7 +14,7 @@ class _TabPageState extends State<TabPage> {
   int currentPageIndex = 0;
   final activePage = [
     const MyHomePage(),
-    const Text('Navigation'),
+    const ListScreen(),
     const Text('List'),
     const Text('Other'),
   ];
