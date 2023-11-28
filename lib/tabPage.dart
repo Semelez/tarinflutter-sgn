@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
-import 'package:testflutter/home.dart';
+import 'package:testflutter/screen/home.dart';
 import 'package:testflutter/list_screen.dart';
+import 'package:testflutter/screen/todo.dart';
 
 class TabPage extends StatefulWidget {
   const TabPage({super.key});
@@ -16,7 +17,7 @@ class _TabPageState extends State<TabPage> {
     const MyHomePage(),
     const ListScreen(),
     const Text('List'),
-    const Text('Other'),
+    const TodoPage(),
   ];
   @override
   Widget build(BuildContext context) {
